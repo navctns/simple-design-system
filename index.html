@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/scss//styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Simple Design System</title>
 </head>
 <body>
-    <nav class="navbar bs-1">
-        <div class="logo-container">
-            <div class="logo">
-                <img class="logo-img" src="https://images.unsplash.com/photo-1572094382897-21abe88fb269?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <div id="app">
+        <nav class="navbar bs-1" :class="{'show': showMenus}">
+            <div class="logo-container flex">
+                <div class="logo">
+                    <img class="logo-img" src="https://images.unsplash.com/photo-1572094382897-21abe88fb269?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="navbar-toggler" >
+                    <i class="fa-solid fa-bars" @click="toggleNavbar"></i>
+                </div>
             </div>
-        </div>
-        <ul class="navbar-menus-list ml-auto">
-            <li class="navbar-menu-item">Home</li>
-            <li class="navbar-menu-item">About</li>
-            <li class="navbar-menu-item">Contact</li>
-        </ul>
-    </nav>
+            <ul class="navbar-menus-list ml-lg-auto">
+                <li class="navbar-menu-item">Home</li>
+                <li class="navbar-menu-item">About</li>
+                <li class="navbar-menu-item">Contact</li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="./assets/js/navbar.js"></script>
 </body>
 </html>

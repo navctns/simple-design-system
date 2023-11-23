@@ -1,3 +1,5 @@
-.ml-auto {
-  margin-left: auto;
+@media (min-width: 992px) {
+  .ml-lg-auto {
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=helpers.css.map */

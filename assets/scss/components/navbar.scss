@@ -6,6 +6,11 @@
     @media (min-width:992px) {
         flex-direction: row;
     }
+    &.show{
+        .navbar-menus-list{
+            display: block;
+        }
+    }
 }
 
 // repeat
@@ -13,21 +18,34 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    display: none;
     @media (min-width: 992px) {
         flex-direction: row;
+        display: flex;
     }  
 }
 
 .navbar-menu-item{
     padding:var(--space-4);
     cursor: pointer;
+    // width:100%;
+    // text-align: left;
 }
 
 .logo-container{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    @media (min-width: 992px) {
+        justify-content: center;
+    }    
     .logo-img{
         height: 4rem;
+    }
+    .navbar-toggler{
+        display: block;
+        @media (min-width: 992px) {
+            display: none;
+        }
     }
 }

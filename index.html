@@ -10,13 +10,48 @@
 <body>
     <div id="app">
         <nav class="navbar bs-1" :class="{'show': showMenus}">
-            <div class="logo-container flex">
-                <div class="logo">
-                    <img class="logo-img" src="https://images.unsplash.com/photo-1572094382897-21abe88fb269?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="flex">
+                <div class="logo-container flex">
+                    <div class="logo">
+                        <img class="logo-img" src="https://images.unsplash.com/photo-1572094382897-21abe88fb269?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="navbar-toggler" >
+                        <i class="fa-solid fa-bars" @click="toggleNavbar"></i>
+                    </div>
                 </div>
-                <div class="navbar-toggler" >
-                    <i class="fa-solid fa-bars" @click="toggleNavbar"></i>
+                <ul class="navbar-menus-list ml-lg-auto">
+                    <li class="navbar-menu-item">Home</li>
+                    <li class="navbar-menu-item">About</li>
+                    <li class="navbar-menu-item">Contact</li>
+                </ul>
+            </div>
+            <ul class="navbar-menus-list ml-lg-auto">
+                <li class="navbar-menu-item">Home</li>
+                <li class="navbar-menu-item">About</li>
+                <li class="navbar-menu-item">Contact</li>
+            </ul>
+        </nav>
+        <nav class="navbar bs-1" :class="{'show': showMenus}">
+            <div class="flex">
+                <div class="logo-container flex">
+                    <div class="logo">
+                        <img class="logo-img" src="https://images.unsplash.com/photo-1572094382897-21abe88fb269?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="navbar-toggler" >
+                        <!-- <i class="fa-solid fa-bars" @click="toggleNavbar"></i> -->
+                        <a href="#" class="navbar-toggler-icon d-lg-none"  @click="toggleNavbar">
+                            <!-- <img src="images/icon-menu.svg" alt=""> -->
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </a>
+                    </div>
                 </div>
+                <ul class="navbar-menus-list ml-lg-auto">
+                    <li class="navbar-menu-item">Home</li>
+                    <li class="navbar-menu-item">About</li>
+                    <li class="navbar-menu-item">Contact</li>
+                </ul>
             </div>
             <ul class="navbar-menus-list ml-lg-auto">
                 <li class="navbar-menu-item">Home</li>

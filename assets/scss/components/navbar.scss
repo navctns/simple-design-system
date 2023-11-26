@@ -10,6 +10,36 @@
         .navbar-menus-list{
             display: block;
         }
+        .navbar-toggler-icon{//mobile menu toggle
+ 
+            >span:nth-child(2){
+                opacity: 0;
+            }
+            >span:first-child{
+                transform:rotate(45deg);
+            }
+            >span:last-child{
+                transform: rotate(-45deg);
+            }
+    
+        }
+    }
+    &-toggler-icon{//mobile menu toggle
+        position: relative;
+        margin-right: 0.937rem;
+        > span{
+            display:block;
+            width:1.625rem;
+            height:0.187rem;
+            background-color:#000;
+            transition: all 300ms ease-in-out;
+            transform-origin: 2px 2px;
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+    
+            
+        }
     }
 }
 
@@ -36,6 +66,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
     @media (min-width: 992px) {
         justify-content: center;
     }    

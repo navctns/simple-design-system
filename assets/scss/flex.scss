@@ -1,3 +1,6 @@
 %flex{ display: flex;}
 %flex-x{ display: flex; flex-direction: row;}
 %flex-y{ display: flex; flex-direction: column;}
+.fl-j-sb{
+    justify-content: space-between;    
+}

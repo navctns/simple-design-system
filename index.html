@@ -19,11 +19,6 @@
                         <i class="fa-solid fa-bars" @click="toggleNavbar"></i>
                     </div>
                 </div>
-                <ul class="navbar-menus-list ml-lg-auto">
-                    <li class="navbar-menu-item">Home</li>
-                    <li class="navbar-menu-item">About</li>
-                    <li class="navbar-menu-item">Contact</li>
-                </ul>
             </div>
             <ul class="navbar-menus-list ml-lg-auto">
                 <li class="navbar-menu-item">Home</li>
@@ -47,16 +42,30 @@
                           </a>
                     </div>
                 </div>
-                <ul class="navbar-menus-list ml-lg-auto">
-                    <li class="navbar-menu-item">Home</li>
-                    <li class="navbar-menu-item">About</li>
-                    <li class="navbar-menu-item">Contact</li>
-                </ul>
             </div>
             <ul class="navbar-menus-list ml-lg-auto">
                 <li class="navbar-menu-item">Home</li>
                 <li class="navbar-menu-item">About</li>
                 <li class="navbar-menu-item">Contact</li>
+            </ul>
+        </nav>
+        <nav class="navbar-no-toggle bs-1" :class="{'show': showMenus}">
+            <div class="flex w-100p">
+                <div class="navbar-no-toggle-logo-container flex fl-j-sb">
+                    <div class="logo">
+                        <img class="logo-img" src="https://images.unsplash.com/photo-1572094382897-21abe88fb269?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <ul class="navbar-no-toggle-menus-list ml-lg-auto">
+                        <li class="navbar-no-toggle-menu-item">Login</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="navbar-no-toggle-menus-list ml-lg-auto">
+                <li class="navbar-no-toggle-menu-item">Home</li>
+                <li class="navbar-no-toggle-menu-item">About</li>
+                <li class="navbar-no-toggle-menu-item">Contact</li>
+                <li class="navbar-no-toggle-menu-item">Service</li>
+                <!-- <li class="navbar-no-toggle-menu-item">Testimonials</li> -->
             </ul>
         </nav>
     </div>

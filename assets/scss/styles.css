@@ -115,6 +115,10 @@
   width: 100%;
 }
 
+.list-unstyled {
+  list-style: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -179,6 +183,12 @@
   }
 }
 
+.nav-item-details {
+  padding: var(--space-3);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: var(--space-3);
+}
+
 .lg-d-none {
   display: unset;
 }
@@ -192,4 +202,12 @@
   .sm-d-none {
     display: none;
   }
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+.row .col-3 {
+  flex-basis: 25%;
 }/*# sourceMappingURL=styles.css.map */

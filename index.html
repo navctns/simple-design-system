@@ -61,7 +61,7 @@
                 </div>
             </div>
             <ul class="navbar-no-toggle-menus-list ml-lg-auto">
-                <li class="navbar-no-toggle-menu-item">Home</li>
+                <li class="navbar-no-toggle-menu-item" @click="expandNavItem(1)">Home</li>
                 <li class="navbar-no-toggle-menu-item">About</li>
                 <li class="navbar-no-toggle-menu-item">Contact</li>
                 <li class="navbar-no-toggle-menu-item">Service</li>
@@ -71,6 +71,34 @@
                 <li class="navbar-no-toggle-menu-item">Login</li>
             </ul>
         </nav>
+        <section class="nav-item-details" v-if="showNavItem1Details">
+            <div class="row">
+                <ul class="list-unstyled col-3">
+                    <li>Home 1</li>
+                    <li>Home 2</li>
+                    <li>Home 3</li>
+                    <li>Home 4</li>
+                </ul>
+                <ul class="list-unstyled col-3">
+                    <li>Home 5</li>
+                    <li>Home 6</li>
+                    <li>Home 7</li>
+                    <li>Home 8</li>
+                </ul>
+                <ul class="list-unstyled col-3">
+                    <li>Home 9</li>
+                    <li>Home 10</li>
+                    <li>Home 11</li>
+                    <li>Home 12</li>
+                </ul>
+                <ul class="list-unstyled col-3">
+                    <li>Home 13</li>
+                    <li>Home 14</li>
+                    <li>Home 15</li>
+                    <li>Home 16</li>
+                </ul>
+            </div>
+        </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>

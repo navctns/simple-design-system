@@ -23,6 +23,14 @@
   padding: var(--space-4);
   cursor: pointer;
 }
+.navbar-no-toggle-logo-section-main {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .navbar-no-toggle-logo-section-main {
+    width: auto;
+  }
+}
 .navbar-no-toggle-logo-container {
   display: flex;
   align-items: center;

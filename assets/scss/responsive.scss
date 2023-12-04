@@ -1,0 +1,11 @@
+.lg-d-none{
+    display: unset;
+    @media(min-width:992px){
+        display: none;
+    }
+}
+.sm-d-none{
+    @media(max-width:768px){
+        display: none;
+    }
+}

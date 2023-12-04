@@ -25,6 +25,12 @@
         // width:100%;
         // text-align: left;
     }
+    &-logo-section-main{
+        width: 100%;
+        @media(min-width: 992px){
+            width: auto;
+        }
+    }
     // Logo Container
     &-logo-container{
         display: flex;

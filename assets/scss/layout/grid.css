@@ -20,9 +20,4 @@
   .grid-3-col {
     grid-template-columns: repeat(3, auto);
   }
-}
-@supports (grid-area: auto) {
-  .grid-3-col {
-    grid-template-columns: repeat(3, auto);
-  }
 }/*# sourceMappingURL=grid.css.map */

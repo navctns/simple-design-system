@@ -28,5 +28,4 @@ $gap-vertical: $gap-horizontal;
 .grid-3-col{
     @include grid;
     @include gridAutoDynamic(3);
-    @include gridAutoDynamic(3);
 }

@@ -18,3 +18,15 @@ $gap-vertical: $gap-horizontal;
     @include grid;
     @include gridAuto(260px);
 }
+
+@mixin gridAutoDynamic($no-of-cols){
+    @supports(grid-area: auto){
+        grid-template-columns: repeat($no-of-cols, auto);
+    }
+}
+
+.grid-3-col{
+    @include grid;
+    @include gridAutoDynamic(3);
+    @include gridAutoDynamic(3);
+}
